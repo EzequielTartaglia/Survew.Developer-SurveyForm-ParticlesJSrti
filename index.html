@@ -1,0 +1,155 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Software Developer: Survey Form</title>
+  </head>
+
+  <body>
+    <div id="particles-js">
+
+    </div>
+    <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Software Developer: Survey Form </h1>
+      <p id="description" class="description text-center">Thank you for taking the time to help us to improve our data</p>
+    </header>          
+        
+      <form id="survey-form">
+
+      <!-- Full name  -->
+      <div id="survey-group">
+      <label id="name-label">First Name: </label>
+        <input class="form-control"type="text" id="name" placeholder="Enter your first name" required > 
+        <label id="name-label">Last Name: </label>
+        <input class="form-control" type="text" id="name" placeholder="Enter your last name" required > 
+      </div>
+      
+      <!-- E-mail  -->
+      <div id="survey-group">
+      <label id="email-label">Email: </label>
+        <input class="form-control" type="email" id="email" placeholder="Enter your email " required >
+      </div>     
+
+      <!-- Age  -->
+      <div id="survey-group">
+      <label id="number-label">Age (optional):</label>
+        <input class="form-control" type="number" max="199" min="1" id="number" placeholder="Age"  >
+      </div>
+
+      <!-- Current Role -->
+      <div id="survey-group">
+      <label> Which option best describes your current role?  </label>
+      <select class="form-control" id="dropdown">
+        <option default>Select current role</option>
+        <option>Student</option>
+        <option>Full-time job</option>
+        <option>Part-time job</option>
+        <option>Full-time learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      </div>
+
+      <!-- Professional experience -->
+      <div id="survey-group">
+      <label>Do you have any professional experience in software development?</label>
+      <select  class="form-control" id="dropdown">
+        <option default>Select your answer</option>
+        <option >Yes</option>
+        <option >No</option>
+      </select>
+      </div>
+      <div id="survey-group">
+      <p>Choose your seniority:</p>
+        <label>
+        <input class="input-radio" type="radio" name="seniority" value="Trainee" checked> Trainee (TR)
+        </label> 
+
+        <label>
+        <input  class="input-radio"type="radio" name="seniority" value="Junior"> Junior (JR)
+        </label> 
+
+        <label>
+        <input  class="input-radio"type="radio" name="seniority" value="Semisenior"> Semi Senior (SSR)
+        </label>
+   
+        <label>
+        <input class="input-radio" type="radio" name="seniority" value="Senior (SR)"> Senior (SR)
+        </label>
+      </div>
+
+      <!-- Different languages -->
+      <div id="survey-group">
+        <p>Choose the different software development languages you know how to use:</p>
+        <label>
+          <input type="checkbox" value="None"class="input-checkbox"> None
+        </label>
+
+        <label>
+          <input type="checkbox" value="Javascript"class="input-checkbox"> Javascript
+        </label>
+
+        <label>
+          <input type="checkbox" value="React JS"class="input-checkbox"> React JS
+        </label>
+
+        <label>
+          <input type="checkbox" value="Vue JS"class="input-checkbox"> Vue JS
+        </label>
+
+        <label>
+          <input type="checkbox" value="Angular"class="input-checkbox"> Angular 
+        </label>
+
+        <label>
+          <input type="checkbox" value="Oracle"class="input-checkbox"> Oracle
+        </label>
+
+        <label>
+          <input type="checkbox" value="Python"class="input-checkbox"> Python
+        </label>
+
+        <label>
+          <input type="checkbox" value="C-Sharp" class="input-checkbox"> C-Sharp
+        </label>
+
+        <label>
+          <input type="checkbox" value="Php" class="input-checkbox"> Php
+        </label>
+
+        <label>
+          <input type="checkbox" value="MySQL" class="input-checkbox"> MySQL
+        </label>
+ 
+        <label>
+          <input type="checkbox" value="Other" class="input-checkbox"> Other
+        </label>
+      </div>
+
+      <!-- Comments  -->
+      <div id="survey-group">
+      <p>Can you add some comments to know you more?</p>
+      <textarea class="input-textarea" id="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <!-- Comments  -->
+      <div  id="survey-group" >
+        <button class="submit-button" id="submit"> 
+            Submit
+        </button>
+      </div>
+      </form>
+      </div>
+
+      <!-- Particles JS -->
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="./app.js"></script>
+    </body>
+ </html> 
+
+ 
